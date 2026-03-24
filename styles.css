@@ -694,6 +694,23 @@ nav {
     transform: scale(1.05);
 }
 
+.featured-award {
+    background: linear-gradient(135deg, var(--rojo-principal), var(--rojo-secundario));
+    color: white;
+    transform: scale(1.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 24px 44px rgba(13, 13, 13, 0.24);
+}
+
+.featured-award .award-photo {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.1));
+}
+
+.featured-award h3,
+.featured-award .year {
+    color: white;
+}
+
 .award-card.featured i {
     font-size: 3rem;
     color: var(--dorado);
