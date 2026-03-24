@@ -150,6 +150,49 @@ nav {
     pointer-events: none;
 }
 
+.members-section,
+.awards-section,
+.contact-section {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--negro) 0%, var(--gris-oscuro) 100%);
+}
+
+.members-section::before,
+.awards-section::before,
+.contact-section::before {
+    content: '';
+    position: absolute;
+    width: min(56vw, 500px);
+    aspect-ratio: 1 / 1;
+    right: -6%;
+    top: 50%;
+    transform: translateY(-50%) scale(1.05);
+    background: url('img/logo.png') center center / 74% no-repeat,
+        radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 58%, transparent 74%);
+    opacity: 0.14;
+    filter: blur(5px);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.members-section::after,
+.awards-section::after,
+.contact-section::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.04), transparent 60%);
+    pointer-events: none;
+}
+
+.members-section .container,
+.awards-section .container,
+.contact-section .container {
+    position: relative;
+    z-index: 1;
+}
+
 .hero-content {
     max-width: 800px;
     width: min(100%, 800px);
@@ -295,6 +338,21 @@ nav {
     margin-bottom: 4rem;
     color: var(--negro);
     position: relative;
+}
+
+.members-section .section-title,
+.awards-section .section-title,
+.contact-section .section-title,
+.members-section .contact-info h3,
+.contact-section .contact-info h3,
+.contact-section .social-links h3 {
+    color: var(--blanco);
+}
+
+.members-section .section-title::after,
+.awards-section .section-title::after,
+.contact-section .section-title::after {
+    background: rgba(255, 255, 255, 0.75);
 }
 
 .section-title::after {
@@ -831,6 +889,11 @@ nav {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: start;
+}
+
+.contact-section > .container > p,
+.contact-section .contact-info > p {
+    color: rgba(230, 230, 230, 0.84);
 }
 
 .contact-info h3 {
