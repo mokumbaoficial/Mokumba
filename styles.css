@@ -735,6 +735,18 @@ nav {
     flex-direction: column;
 }
 
+.award-card-dark {
+    background: #050505;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 22px 38px rgba(0, 0, 0, 0.32);
+}
+
+.award-card-dark h3,
+.award-card-dark .year {
+    color: white;
+}
+
 .award-photo {
     width: 100%;
     height: 320px;
@@ -743,6 +755,10 @@ nav {
     margin-bottom: 1.5rem;
     background: linear-gradient(180deg, #f7f1ef, #ffffff);
     padding: 1rem;
+}
+
+.award-photo-dark {
+    background: #050505;
 }
 
 .award-photo-card h3,
