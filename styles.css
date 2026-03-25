@@ -1515,3 +1515,20 @@ footer {
         text-align: center;
     }
 }
+
+/* Media query to optimize image sizes for mobile devices */
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .img-container img {
+        width: 100%; /* Ensure images fit their container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .container {
+        padding: 0 10px; /* Reduce padding for smaller screens */
+    }
+}
